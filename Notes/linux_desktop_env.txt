@@ -1,0 +1,6 @@
+ls -l /usr/share/xsessions
+
+sudo apt-get install cinnamon-desktop-environmentsudo apt-get install cinnamon-desktop-environment
+
+sudo apt-get install ubuntu-mate-desktop
+
