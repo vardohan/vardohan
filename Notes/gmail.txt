@@ -1,0 +1,11 @@
+install the google client library
+
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+Create a file named quickstart.py in your working directory and copy in the following code:
+https://github.com/gsuitedevs/python-samples/blob/master/gmail/quickstart/quickstart.py
+
+python quickstart.py
+
+Note: Authorization information is stored on the file system, so subsequent executions will not prompt for authorization.
+

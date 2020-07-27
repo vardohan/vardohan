@@ -1,0 +1,37 @@
+creating environemnt with commands
+
+To dsiplay environemnts
+    conda info --envs
+    conda env list
+
+conda create --help
+
+To create an environment:
+    conda create --name myenv
+
+To create an environment with a specific version of Python:
+    conda create -n myenv python=3.6
+
+To create an environment with a specific package:
+    conda create -n myenv scipy
+    or
+    conda create -n myenv python
+    conda install -n myenv scipy
+
+To activate an environment: 
+    conda activate myenv
+
+work in different supported shells
+    conda init --all
+
+conda search mymodule
+
+conda deactivate
+
+conda install -n myenv pip
+
+conda install module
+
+
+
+
