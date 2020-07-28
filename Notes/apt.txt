@@ -1,0 +1,6 @@
+sudo apt search "user-input"
+sudo apt autoremove "user-input"
+
+sudo apt list
+sudo apt list | grep "serach-input"
+
