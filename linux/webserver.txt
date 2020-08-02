@@ -1,0 +1,59 @@
+apache2
+
+sudo apt update
+sudo apt install apache2
+
+Creating Your Own Website
+    We can modify its content in /var/www/html or 
+    settings by editing its Virtual Host file found in /etc/apache2/sites-enabled/000-default.conf.
+
+    sudo mkdir /var/www/gci/
+    We have it named gci here but any name will work, as long as we point to it in the virtual hosts configuration file later.
+
+    cd /var/www/gci/
+    nano index.html
+
+    <html>
+    <head>
+    <title> Ubuntu rocks! </title>
+    </head>
+    <body>
+    <p> I'm running this website on an Ubuntu Server server!
+    </body>
+    </html>
+
+Now let’s create a VirtualHost file so it’ll show up when we type in gci.example.com.
+
+Setting up the VirtualHost Configuration File
+    We start this step by going into the configuration files directory:
+    cd /etc/apache2/sites-available/
+    
+    Since Apache came with a default VirtualHost file, let’s use that as a base. 
+    (gci.conf is used here to match our subdomain name):
+    sudo cp 000-default.conf gci.conf
+
+    Now edit the configuration file:
+    sudo nano gci.conf
+
+    We should have our email in ServerAdmin so users can reach you in case Apache experiences any error:
+    ServerAdmin yourname@example.com
+
+    We also want the DocumentRoot directive to point to the directory our site files are hosted on:
+    DocumentRoot /var/www/gci/
+
+    The default file doesn’t come with a ServerName directive so we’ll have to add and define it by adding this 
+    line below the last directive:
+    ServerName gci.example.com
+
+    This ensures people reach the right site instead of the default one when they type in gci.example.com.
+
+Now that we’re done configuring our site, let’s save and activate it in the next step!
+
+Activating VirtualHost file
+    After setting up our website, we need to activate the virtual hosts configuration file to enable it. 
+    We do that by running the following command in the configuration file directory:
+    sudo a2ensite gci.conf
+
+    To load the new site, we restart Apache by typing:
+    service apache2 reload
+
