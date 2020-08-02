@@ -1,0 +1,6 @@
+why pointer are not available in python
+
+
+
+
+

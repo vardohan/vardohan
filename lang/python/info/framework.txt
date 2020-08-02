@@ -1,0 +1,4 @@
+Write once. Deploy everywhere
+    https://beeware.org/
+
+https://kivy.org/#home
