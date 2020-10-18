@@ -1,0 +1,2 @@
+bash.bashrc             /etc/bash.bashrc
+run changes to effective - source bash.bashrc

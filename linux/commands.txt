@@ -1,2 +1,15 @@
 mv *.jpg "destination folder"
 
+#move to root
+sudo -i -u root
+
+sudo whoami
+sudo date
+
+tree
+
+#check the folder present in tree
+tree | grep "folder name"
+
+unzip "zip file name"
+

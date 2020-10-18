@@ -1,0 +1,16 @@
+The name tar is derived from (t)ape (ar)chive.
+ 
+A tar archive files usually have the file suffix .tar, e.g., package.tar or package.tar.bz2 or 
+package.tar.bz or package.tar.xz. The term tarball is also used to refer to a tar file.
+
+Download the desired .tar.gz or (.tar.bz2) file
+Open Terminal
+tar --help
+Extract the .tar.gz or (.tar.bz2) file with the following commands
+tar -xf "tar file name"
+Navigate to the extracted folder using cd command
+cd PACKAGENAME
+Now run the following command to install the tarball
+./configure
+make
+sudo make install

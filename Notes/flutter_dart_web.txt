@@ -1,0 +1,9 @@
+update bash.bashrc with flutter and dart paths
+
+create a web app
+     mkdir quickstart
+    cd quickstart
+    stagehand web-simple
+    pub get
+
+webdev serve

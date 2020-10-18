@@ -1,3 +1,5 @@
+apt-get
+
 sudo apt search "user-input"
 sudo apt autoremove "user-input"
 
@@ -7,4 +9,17 @@ sudo apt list | grep "serach-input"
 sudo apt list --installed | grep "search-input"
 
 sudo apt-get autoremove --purge cinnamon
+
+sudo apt-get udpate
+
+sudo add-apt-repository ppa:clipgrab-team/ppa
+sudo apt-get update
+sudo apt-get install clipgrab
+
+sudo apt-get remove clipgrab
+sudo add-apt-repository --remove ppa:clipgrab-team/pp
+
+sudo apt install youtube-dl
+
+sudo apt install flowblade
 
